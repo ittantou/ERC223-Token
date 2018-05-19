@@ -124,7 +124,7 @@ contract ERC223 {
         uint32 u = uint32(_data[3]) + (uint32(_data[2]) << 8) + (uint32(_data[1]) << 16) + (uint32(_data[0]) << 24);
         tkn.sig = bytes4(u);
 
-        /*
+        /**
          * tkn variable is analogue of msg variable of Ether transaction
          * tkn.sender is person who initiated this token transaction (analogue of msg.sender)
          * tkn.value the number of tokens that were sent (analogue of msg.value)
